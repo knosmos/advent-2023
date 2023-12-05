@@ -1,4 +1,4 @@
-f = open("b.txt").read().split("\n\n")
+f = open("05.txt").read().split("\n\n")
 seeds = list(map(int, f[0].split(": ")[1].split()))
 rs = [[seeds[i], seeds[i] + seeds[i+1] - 1] for i in range(0, len(seeds), 2)]
 #print(rs)
