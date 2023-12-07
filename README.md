@@ -25,3 +25,7 @@ Yet another Advent of Code 2023 repository
 ### Day 6
 1. Straightforward brute force.
 2. We have quadratic equation `- i^2 + ti - r > 0` where `i` is the number of seconds to hold, `t` is the total time, and `r` is the record. Number of integers inside the range of the two solutions is the answer.
+
+### Day 7
+1. Generate a numerical score of each card by calculating hand type (mainly through finding number of unique items) and appending value of each card in order, then sort based on those scores.
+2. Modify score calculation algorithm by running through all possible values of wildcard to find maximum hand type.
