@@ -29,3 +29,7 @@ Yet another Advent of Code 2023 repository
 ### Day 7
 1. Generate a numerical score of each card by calculating hand type (mainly through finding number of unique items) and appending value of each card in order, then sort based on those scores.
 2. Modify score calculation algorithm by running through all possible values of wildcard to find maximum hand type.
+
+### Day 8
+1. Simulate steps from `AAA`, terminate when `ZZZ` is reached.
+2. Simulate each starting node independently (counting the number of steps taken to reach a destination node), then take the least common multiple of each node's period. The input is nicely constructed in such a way that this works (I'm pretty sure it would fail on a more general test case).
