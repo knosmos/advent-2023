@@ -33,3 +33,15 @@ Yet another Advent of Code 2023 repository
 ### Day 8
 1. Simulate steps from `AAA`, terminate when `ZZZ` is reached.
 2. Simulate each starting node independently (counting the number of steps taken to reach a destination node), then take the least common multiple of each node's period. The input is nicely constructed in such a way that this works (I'm pretty sure it would fail on a more general test case).
+
+### Day 9
+1. Calculate the differences as described in the problem statement. Then sum up the last item of each difference list.
+2. Same thing, but in reverse.
+
+### Day 10
+1. Run BFS starting from `S`. The current character in each BFS step decides the possible directions for the next step.
+2. After finding the loop, run a raycast-esque algorithm to find the number of times a ray pointing downwards hits a horizontal piece of the loop. There's an edge case where the ray hits the loop exactly on a vertical line of the loop: if the line ends up crossing the path of the ray (i.e. it goes from `F` to `J` or `7` to `L`, so the ray crosses a horizontal line of the loop), then we count it as a hit; otherwise we ignore it.
+
+### Day 11
+1. Find all the empty columns and rows. Then loop through the grid to find the actual position of each galaxy; to do this, we maintain two offset counters for the rows and columns, incrementing them each time we encounter an empty row or column. We then loop over all pairs of galaxies and sum the Manhattan distance between them.
+2. Our solution for Part 1 makes this trivial: just increase the offset counters by 999999 each time.
