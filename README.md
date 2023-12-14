@@ -45,3 +45,14 @@ Yet another Advent of Code 2023 repository
 ### Day 11
 1. Find all the empty columns and rows. Then loop through the grid to find the actual position of each galaxy; to do this, we maintain two offset counters for the rows and columns, incrementing them each time we encounter an empty row or column. We then loop over all pairs of galaxies and sum the Manhattan distance between them.
 2. Our solution for Part 1 makes this trivial: just increase the offset counters by 999999 each time.
+
+### Day 12
+1. Currently a brute-force solution.
+
+### Day 13
+1. Brute force over all possible lines of symmetry. The tricky part is establishing the bounds given the asymmetric folding; we iterate from `max(0, k - (len(p) - k))` (where `p` is the length of the input in the direction parallel to the line and `k` is the index right before the candidate line) to `k` inclusive.
+2. Find the original line of reflection, then brute force over all possible smudges, testing to see if any result in a different line of reflection.
+
+### Day 14
+1. Scan through each column individually, storing the index of the last non-moving rock (including round rocks that are pushed against square ones). Calculate the load factor as we iterate.
+2. Use the same approach, but also build the resulting string as we go. We don't need to simulate the full number of iterations; the grid settles after some number of cycles. I run 1000 cycles, but we can terminate as soon as the grid is unchanged after a cycle.
