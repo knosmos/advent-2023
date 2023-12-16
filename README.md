@@ -56,3 +56,11 @@ Yet another Advent of Code 2023 repository
 ### Day 14
 1. Scan through each column individually, storing the index of the last non-moving rock (including round rocks that are pushed against square ones). Calculate the load factor as we iterate.
 2. Use the same approach, but also build the resulting string as we go. We don't need to simulate the full number of iterations; the grid settles after some number of cycles. I run 1000 cycles, but we can terminate as soon as the grid is unchanged after a cycle.
+
+### Day 15
+1. Straightforward implementation (use `ord` for ascii codes).
+2. Straightforward implementation.
+
+### Day 16
+1. Maintain a stack of each beam (storing position and x/y velocity). Then run DFS; this makes the process very straightforward as we can just pop the next beam off the stack, calculate the next positions (admittedly a very tedious process), and push the resulting beam(s) onto the stack.
+2. Run the above algorithm for all edge cells.
