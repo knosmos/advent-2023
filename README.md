@@ -64,3 +64,7 @@ Yet another Advent of Code 2023 repository
 ### Day 16
 1. Maintain a stack of each beam (storing position and x/y velocity). Then run DFS; this makes the process very straightforward as we can just pop the next beam off the stack, calculate the next positions (admittedly a very tedious process), and push the resulting beam(s) onto the stack.
 2. Run the above algorithm for all edge cells.
+
+### Day 17
+1. Dijkstra's algorithm, with each state storing not only position but the current direction and "streak".
+2. Same algorithm, with different "neighbor" definitions. Mainly, we skip forward four cells whenever we change direction.
