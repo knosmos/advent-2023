@@ -68,3 +68,7 @@ Yet another Advent of Code 2023 repository
 ### Day 17
 1. Dijkstra's algorithm, with each state storing not only position but the current direction and "streak".
 2. Same algorithm, with different "neighbor" definitions. Mainly, we skip forward four cells whenever we change direction.
+
+### Day 18
+1. Shoelace theorem to find area. Apply black magic Pick's theorem to find the final answer with `(area from shoelace) - perimeter / 2 + 1`.
+2. Trivial after using above approach for Part 1.
