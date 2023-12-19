@@ -72,3 +72,7 @@ Yet another Advent of Code 2023 repository
 ### Day 18
 1. Shoelace theorem to find area. Apply black magic Pick's theorem to find the final answer with `(area from shoelace) - perimeter / 2 + 1`.
 2. Trivial after using above approach for Part 1.
+
+### Day 19
+1. Parse and run through the workflows as described.
+2. Interval hacking similar to day 5. Each time we reach a decision, we split our range into a range that satisfies the condition and a range that does not, recursively running the algorithm through the workflows on both ranges as necessary.
