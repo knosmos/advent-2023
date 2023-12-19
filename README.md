@@ -1,6 +1,8 @@
 # advent-2023
 Yet another Advent of Code 2023 repository
 
+`Current total: 361 points`
+
 ## Solution Sketches
 ### Day 1
 1. Straightforward implementation.
